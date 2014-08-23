@@ -10,12 +10,6 @@ urlpatterns = patterns('',
 )
 
 
-"""
-    Removed @ 07/23 10:37AM     
-    Because event invitation is cancelled
-
-"""
-
 
 
 
