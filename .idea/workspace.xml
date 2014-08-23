@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="930d68cd-f9e4-4181-9cd1-aa234ad9c2a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/html.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dndTree.js" afterPath="$PROJECT_DIR$/dndTree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/force-example.html" afterPath="$PROJECT_DIR$/force-example.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/label-graph.html" afterPath="$PROJECT_DIR$/label-graph.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,18 +30,18 @@
       <file leaf-file-name="label-graph.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/label-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="839" max-vertical-offset="2055">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.375" vertical-offset="870" max-vertical-offset="2055">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="force-graph.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="force-graph.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/force-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35845214" vertical-offset="1534" max-vertical-offset="2505">
-              <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+            <state vertical-scroll-proportion="-97.5" vertical-offset="0" max-vertical-offset="2505">
+              <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -54,7 +50,7 @@
       <file leaf-file-name="d3.geom.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/d3.geom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12555" max-vertical-offset="12645">
+            <state vertical-scroll-proportion="0.0" vertical-offset="10137" max-vertical-offset="12645">
               <caret line="837" column="5" selection-start-line="837" selection-start-column="5" selection-end-line="837" selection-end-column="5" />
               <folding />
             </state>
@@ -64,8 +60,8 @@
       <file leaf-file-name="d3.layout.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/d3.layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="28425" max-vertical-offset="28515">
-              <caret line="1895" column="5" selection-start-line="1895" selection-start-column="5" selection-end-line="1895" selection-end-column="5" />
+            <state vertical-scroll-proportion="-5.8461537" vertical-offset="7033" max-vertical-offset="28515">
+              <caret line="479" column="19" selection-start-line="479" selection-start-column="19" selection-end-line="479" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -74,8 +70,8 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="840">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="840">
+              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -91,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="force-example.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="force-example.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/force-example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2010">
-              <caret line="63" column="40" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.64285713" vertical-offset="1626" max-vertical-offset="2130">
+              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,13 +115,13 @@
         <option value="$PROJECT_DIR$/graph.json" />
         <option value="$PROJECT_DIR$/dndTree.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/label-graph.html" />
         <option value="$PROJECT_DIR$/d3.geom.js" />
         <option value="$PROJECT_DIR$/d3.layout.js" />
         <option value="$PROJECT_DIR$/exam.html" />
         <option value="d3js.org/d3.v2.js" />
-        <option value="$PROJECT_DIR$/force-example.html" />
         <option value="$PROJECT_DIR$/force-graph.html" />
+        <option value="$PROJECT_DIR$/force-example.html" />
+        <option value="$PROJECT_DIR$/label-graph.html" />
       </list>
     </option>
   </component>
@@ -202,7 +198,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.force-graph.html">
+  <component name="RunManager" selected="JavaScript Debug.label-graph.html">
     <configuration default="false" name="label-graph.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" uri="http://localhost:63342/html/label-graph.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -278,11 +274,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.force-graph.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.label-graph.html" />
         <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.force-example.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.exam.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.label-graph.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.force-graph.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.exam.html" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +300,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26357615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26357615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -398,6 +394,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="885">
           <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -430,18 +427,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="840">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
+    <entry file="http://d3js.org/d3.v2.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/label-graph.html">
+    <entry file="file://$PROJECT_DIR$/exam.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="839" max-vertical-offset="2055">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.43076923" vertical-offset="2579" max-vertical-offset="4500">
+          <caret line="185" column="40" selection-start-line="185" selection-start-column="40" selection-end-line="185" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -456,36 +450,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/d3.layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10370" max-vertical-offset="28515">
-          <caret line="1895" column="5" selection-start-line="1895" selection-start-column="5" selection-end-line="1895" selection-end-column="5" />
+        <state vertical-scroll-proportion="-5.8461537" vertical-offset="7033" max-vertical-offset="28515">
+          <caret line="479" column="19" selection-start-line="479" selection-start-column="19" selection-end-line="479" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="http://d3js.org/d3.v2.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43076923" vertical-offset="2579" max-vertical-offset="4500">
-          <caret line="185" column="40" selection-start-line="185" selection-start-column="40" selection-end-line="185" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/force-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2010">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="40" />
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="840">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/force-graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35845214" vertical-offset="1534" max-vertical-offset="2505">
-          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+        <state vertical-scroll-proportion="-97.5" vertical-offset="0" max-vertical-offset="2505">
+          <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/label-graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375" vertical-offset="870" max-vertical-offset="2055">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/force-example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64285713" vertical-offset="1626" max-vertical-offset="2130">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
         </state>
       </provider>
