@@ -19,3 +19,4 @@ rq-scheduler
 blinker
 django-redisboard
 rdflib
+nltk
