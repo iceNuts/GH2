@@ -18,3 +18,4 @@ uwsgi
 rq-scheduler
 blinker
 django-redisboard
+rdflib

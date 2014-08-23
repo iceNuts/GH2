@@ -23,6 +23,8 @@ from corona.settings import ACTIVATE_KEY
 from django.core.exceptions import ValidationError
 from django.core.cache import cache
 from utilities import my_json
+from utilities import rdf
+
 
 import logging
 
@@ -167,8 +169,17 @@ def fork_taxonomy(input, userid):
 
 def export_taxonomy(taxonomy_id):
 
-    pass
+    taxonomy = Taxonomy.objects(pk=taxonomy_id).first()
 
+    output['taxonomy'] = my_json.clean_bson(taxonomy.to_mongo())
+    attr_list = []
+    for attr in attrs:
+        attr = attr.to_mongo()
+        attr = my_json.clean_bson(attr)
+        attr_list.append(attr)
+    output['attribute'] = attr_list
+
+    return rdf.json_to_rdf(output)
 
 def more_data_taxonomy(input):
 
