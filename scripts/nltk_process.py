@@ -1,4 +1,4 @@
-import json
+import random
 import nltk
 
 from collections import Counter
@@ -34,3 +34,8 @@ def build_similiarity_tree(original_word, wordList, levelRemains):
             children.append(build_similiarity_tree(word, wordList, levelRemains-1));
         similiarity_tree['children'] = children;
     return similiarity_tree;
+
+def get_related_sentence(word, raw, sample_size = 5):
+    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+    all_sentence = [" ".join(sentence.split()) for sentence in tokenizer.tokenize(raw) if 'freedom' in sentence]
+    return random.sample(all_sentence, sample_size)
