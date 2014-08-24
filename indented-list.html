@@ -30,7 +30,7 @@
     var margin = {top: 30, right: 20, bottom: 30, left: 20},
             width = 960 - margin.left - margin.right,
             barHeight = 20,
-            barWidth = width * .3;
+            barWidth = width * .1;
 
     var i = 0,
             duration = 400,
@@ -58,7 +58,7 @@
         // Compute the flattened node list. TODO use d3.layout.hierarchy.
         var nodes = tree.nodes(root);
 
-        var height = Math.max(700, nodes.length * barHeight * 1.1 + margin.top + margin.bottom);
+        var height = Math.max(700, nodes.length * barHeight * 1.2 + margin.top + margin.bottom);
 
         d3.select("svg").transition()
                 .duration(duration)
@@ -70,7 +70,7 @@
 
         // Compute the "layout".
         nodes.forEach(function(n, i) {
-            n.x = i * barHeight * 1.1;
+            n.x = i * barHeight * 1.2;
         });
 
         // Update the nodes…
