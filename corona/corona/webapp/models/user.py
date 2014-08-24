@@ -11,4 +11,4 @@ class User(Document):
     user_name = StringField()
     user_password = StringField()
     title = StringField(default='looper')
-    weight=StringField(default=1)
+    weight = IntField(default=1)

@@ -96,15 +96,6 @@ def taxonomy_delete(object_id):
     Taxonomy.objects(pk=object_id).delete
 
 
-def like_taxonomy(input):
-
-    object_id = input['object_id']
-    taxonomy = Taxonomy.objects(pk=object_id)
-    taxonomy.update(
-        inc__like=1
-        )
-
-
 def publish_taxonomy(input):
 
     object_id = input['object_id']
@@ -113,15 +104,22 @@ def publish_taxonomy(input):
         set__private=0
         )
 
+def like_taxonomy(input):
+
+    object_id = input['object_id']
+    taxonomy = Taxonomy.objects(pk=object_id)
+    taxonomy.update(
+        inc__like=1
+        )
 
 def attribute_post(input):
 
     taxonomy = input['taxonomy']
-    meta = input['meta']
+    data = input['data']
 
     attr = Attribute(
         taxonomy=taxonomy,
-        meta=meta
+        data=data
         )
     attr.save()
 
@@ -129,11 +127,11 @@ def attribute_post(input):
 def attribute_put(input):
 
     object_id = input['object_id']
-    meta = input['meta']
+    data = input['data']
 
     attr = Attribute.objects(pk=object_id)
     attr.update(
-        set__meta=meta
+        set__data=data
         )
 
 def attribute_get(taxonomy_id):
@@ -162,7 +160,7 @@ def fork_taxonomy(input, userid):
     for attr in attrs:
         new_attr = Attribute(
             taxonomy=str(new_taxonomy.id),
-            meta=attr.meta
+            data=attr.data
             )
         new_attr.save()
 

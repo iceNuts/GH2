@@ -105,14 +105,13 @@ def like_taxonomy(request):
 @api_view(['POST'])
 @user_login_required
 def publish_taxonomy(request):
-
-   try:
+    try:
         output = 'OK'
-
+        
         poolviewmodel.publish_taxonomy(request.DATA)
-
+        
         return Response({'result' : output}, status=status.HTTP_200_OK)
-
+    
     except Exception, e:
         logging.getLogger("general").debug(e)
         return Response(json.dumps({'error_code' : 'error'}), status=status.HTTP_500_INTERNAL_SERVER_ERROR)

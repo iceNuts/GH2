@@ -25,16 +25,17 @@ header['CharSet'] = 'unicode'
 @csrf_exempt
 @api_view(['POST'])
 def user_login(request):
+
     try:
 
         output = userviewmodel.login_post(request.DATA)
-
-        response = Response({'result' : 'userid': output['userid']}, headers=header, status=status.HTTP_200_OK)
+        response = Response({'result' : output['userid']}, headers=header, status=status.HTTP_200_OK)
 
         response.set_cookie('userid', output['userid'])
         response.set_cookie('token', output['token'])
 
         return response
+
     except Exception, e:
         logging.getLogger("general").debug(e)
         return Response(json.dumps({'error_code' : 'error'}), status=status.HTTP_403_FORBIDDEN)
@@ -45,7 +46,6 @@ def user_login(request):
 def user(request, uid=None):
 
     try:
-
         output = userviewmodel.user_get({ 'uid' : uid})
 
         return Response({'result' : output}, status=status.HTTP_200_OK)

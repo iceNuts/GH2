@@ -7,7 +7,7 @@ from rest_framework import status
 from django.core.cache import cache
 
 import logging
-simport hashlib
+import hashlib
 
 def user_login_required(f):
     def wrap(request, *args, **kwargs):
@@ -15,7 +15,7 @@ def user_login_required(f):
             user_id = request.COOKIES['userid']
             token = request.COOKIES['token']
 
-            if not (user_id and cache.get(userid) == token):
+            if not (user_id and cache.get(user_id) == token):
                 return Response({'error_code' : 'not logged in'}, status.HTTP_401_UNAUTHORIZED)
         except Exception, e:
             return Response({'error_code' : 'exception'}, status.HTTP_401_UNAUTHORIZED)

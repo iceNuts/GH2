@@ -28,19 +28,24 @@ import logging
 
 def login_post(input):
 
+    output = dict()
+
     user_name =  input['user_name']
     user_password = input['user_password']
 
     user = User.objects(user_name=user_name, user_password=user_password)
 
     if not user == None:
+
         token = hashlib.md5(str(datetime.now()) + str(randint(-5000, 5000)) + SECRET_KEY).hexdigest()
         userid = str(user.first().id)
 
-        output['userid'] = userid
-        output['token'] = token
-
         cache.set(userid, token, 60 * 60 * 24 * 30)
+
+        output = {
+            'userid' : userid,
+            'token' : token
+        }
 
         return output
 
@@ -59,7 +64,6 @@ def user_get(input):
         user = user.to_mongo()
 
         output = my_json.clean_bson(user)
-
         return output
 
     else:
