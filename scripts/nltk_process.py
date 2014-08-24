@@ -2,11 +2,8 @@ import random
 import nltk
 
 from sets import Set
-
-from collections import Counter
 from nltk.corpus import *
 from nltk.tag import pos_tag
-import json
 
 def word_count(article, wordType, count=30):
     tagged = pos_tag(nltk.regexp_tokenize(article.lower(), r'\w+', gaps=False))
