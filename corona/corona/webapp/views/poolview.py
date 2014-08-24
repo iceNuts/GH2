@@ -107,7 +107,7 @@ def like_taxonomy(request):
 def publish_taxonomy(request):
     try:
         output = 'OK'
-        
+
         poolviewmodel.publish_taxonomy(request.DATA)
         
         return Response({'result' : output}, status=status.HTTP_200_OK)
@@ -150,7 +150,7 @@ def fork_taxonomy(request):
     try:
         output = 'OK'
 
-        poolviewmodel.fork_taxonomy(request.DATA, request.COOKIES['userid'])
+        poolviewmodel.fork_taxonomy(request.DATA, request.DATA['userid'])
 
         return Response({'result' : output}, status=status.HTTP_200_OK)
 

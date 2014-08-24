@@ -39,10 +39,10 @@ def activity(request):
         output = 'OK'
 
         if request.method == 'POST':
-            output = activityviewmodel.activity(request.DATA, request.COOKIES['userid'])
+            output = activityviewmodel.activity(request.DATA, request.DATA['userid'])
 
         if request.method == 'PUT':
-            activityviewmodel.activity_read_status(request.DATA, request.COOKIES['userid'])
+            activityviewmodel.activity_read_status(request.DATA, request.DATA['userid'])
 
         return Response({'result' : output}, headers=header, status=status.HTTP_200_OK)
     except Exception, e:

@@ -29,7 +29,7 @@ def user_login(request):
     try:
 
         output = userviewmodel.login_post(request.DATA)
-        response = Response({'result' : output['userid']}, headers=header, status=status.HTTP_200_OK)
+        response = Response({'userid' : output['userid'], 'token': output['token']}, headers=header, status=status.HTTP_200_OK)
 
         response.set_cookie('userid', output['userid'])
         response.set_cookie('token', output['token'])

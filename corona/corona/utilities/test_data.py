@@ -40,24 +40,59 @@ def load():
         )
     chuan.save()
 
-    name_list = [
+    name_list_li = [
         'JSON',
         'HACK',
         'HUMAN',
         'RACE',
-        'LOVE',
-        'LIFE',
-        'COMPUTER',
-        'WASHU'
+        'LOVE'
     ]
 
-    for num in xrange(8):
+    name_list_yi = [
+        'LIFE',
+        'COMPUTER',
+        'WASHU',
+        'AAYA',
+        'BIG BOY'
+    ]
+
+    like_list_li = [
+        23,
+        17,
+        29,
+        88,
+        67
+    ]
+
+    like_list_yi = [
+        55,
+        13,
+        10,
+        7,
+        91
+    ]
+
+    for num in xrange(5):
         filename = 'test_data/' + str(num) + '.json'
         data = load_data_from_json(filename)
+        fake_taxonomy(data, str(li.id), 1, name_list_li, like_list_li, num)
+        fake_taxonomy(data, str(yi.id), 0, name_list_yi, like_list_yi, num)
+
+
+def load_data_from_json(filename):
+
+    with open(filename) as json_file:
+        json_data = json.load(json_file)
+
+        return json_data
+
+def fake_taxonomy(data, uid, private, name_list, like_list, num):
 
         taxonomy = Taxonomy(
-            owner=str(li.id),
+            owner=uid,
             name=str(name_list[num]),
+            private=private,
+            like=like_list[num]
             )
         taxonomy.save()
 
@@ -81,17 +116,7 @@ def load():
             taxonomy=str(taxonomy.id),
             data=chain_data
             )
-        attr_chain.save()        
-
-
-def load_data_from_json(filename):
-
-    with open(filename) as json_file:
-        json_data = json.load(json_file)
-
-        return json_data
-
-
+        attr_chain.save() 
 
 
 
