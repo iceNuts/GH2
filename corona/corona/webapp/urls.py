@@ -18,6 +18,7 @@ urlpatterns = patterns('',
 
     # taxonomy
     url(r'^taxonomy$', 'webapp.views.poolview.taxonomy'),
+    url(r'^taxonomy/info/(\w+)$', 'webapp.views.poolview.taxonomy'),
     url(r'^taxonomy/delete/(\w+)$', 'webapp.views.poolview.taxonomy'),
     url(r'^taxonomy/like$', 'webapp.views.poolview.like_taxonomy'),
     url(r'^taxonomy/publish$', 'webapp.views.poolview.publish_taxonomy'),

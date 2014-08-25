@@ -41,19 +41,19 @@ def load():
     chuan.save()
 
     name_list_li = [
-        'JSON',
-        'HACK',
-        'HUMAN',
-        'RACE',
-        'LOVE'
+        'JSON IS COOL',
+        'HACK IN THE HOLE',
+        'HUMAN IS INT',
+        'RACE AGAINST PIG',
+        'LOVE IS FOOLISH'
     ]
 
     name_list_yi = [
-        'LIFE',
-        'COMPUTER',
-        'WASHU',
-        'AAYA',
-        'BIG BOY'
+        'LIFE IS COOL',
+        'COMPUTER IS - -',
+        'WE LOVE WASHU',
+        'AAYA IS we TEAM',
+        'BIG BOY BIG DREAM'
     ]
 
     like_list_li = [
@@ -72,11 +72,27 @@ def load():
         91
     ]
 
+    private_list_li = [
+        0,
+        1,
+        1,
+        0,
+        1
+    ]
+
+    private_list_yi = [
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+
     for num in xrange(5):
         filename = 'test_data/' + str(num) + '.json'
         data = load_data_from_json(filename)
-        fake_taxonomy(data, str(li.id), 1, name_list_li, like_list_li, num)
-        fake_taxonomy(data, str(yi.id), 0, name_list_yi, like_list_yi, num)
+        fake_taxonomy(data, str(li.id), private_list_li, name_list_li, like_list_li, num)
+        fake_taxonomy(data, str(yi.id), private_list_yi, name_list_yi, like_list_yi, num)
 
 
 def load_data_from_json(filename):
@@ -86,12 +102,12 @@ def load_data_from_json(filename):
 
         return json_data
 
-def fake_taxonomy(data, uid, private, name_list, like_list, num):
+def fake_taxonomy(data, uid, private_list, name_list, like_list, num):
 
         taxonomy = Taxonomy(
             owner=uid,
             name=str(name_list[num]),
-            private=private,
+            private=private_list[num],
             like=like_list[num]
             )
         taxonomy.save()
@@ -102,18 +118,21 @@ def fake_taxonomy(data, uid, private, name_list, like_list, num):
 
         attr_count = Attribute(
             taxonomy=str(taxonomy.id),
+            attrtype=0,
             data=count_data
             )
         attr_count.save()
 
         attr_tree = Attribute(
             taxonomy=str(taxonomy.id),
+            attrtype=1,
             data=tree_data
             )
         attr_tree.save()
 
         attr_chain = Attribute(
             taxonomy=str(taxonomy.id),
+            attrtype=2,
             data=chain_data
             )
         attr_chain.save() 
