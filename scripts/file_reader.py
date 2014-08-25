@@ -1,3 +1,4 @@
+import json
 import os
 
 def read_file(path):
@@ -15,3 +16,7 @@ def read_folder(path):
                 raw += my_file.read()
                 my_file.close()
     return raw
+
+def read_json(path):
+    f = open(path)
+    return json.load(f)
